@@ -1,28 +1,22 @@
 # AngularioWithCustomDateadapter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+Project generated with Angular CLI.
 
-## Development server
+This project is a sample to implement MdDateFormats and DateAdapter from @angular/material.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Its based on 'native-date-adapter.ts' and 'native-date-formats.ts' implementations from @angular/material.
 
-## Code scaffolding
+It uses momentjs to parse the dates in locale format.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+It has the following key parts:
+-'locale' into MyDateAdapter class, defines the format to display in dates. Eg: 'es-UY'.
+-If doesnt support INTL, you must override DEFAULT_MONTH_NAMES and DEFAULT_DAY_OF_WEEK_NAMES values into MyDateAdapter.
+-'parse.dateInput' from MY_DATE_FORMATS const, where you specify the format to parse the values as string. This should be the date format used by the locale format specified.
 
-## Build
+Project created with Angular CLI.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+npm dependencies installed:
+`npm install --save moment`
+`npm install --save @angular/material`
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
