@@ -14,6 +14,7 @@ It has the following key parts:
 Project generated with Angular CLI. To start project run: `ng serve`
 
 npm dependencies installed:
+
 `npm install --save moment`
 
 `npm install --save @angular/material`
