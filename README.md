@@ -1,8 +1,6 @@
 # AngularioWithCustomDateadapter
 
-Project generated with Angular CLI.
-
-This project is a sample to implement MdDateFormats and DateAdapter from @angular/material.
+This project is an implementation sample of MdDateFormats and DateAdapter from @angular/material (used 'es-UY' localization for my own convinience). 
 
 Its based on 'native-date-adapter.ts' and 'native-date-formats.ts' implementations from @angular/material.
 
@@ -13,7 +11,7 @@ It has the following key parts:
 -If doesnt support INTL, you must override DEFAULT_MONTH_NAMES and DEFAULT_DAY_OF_WEEK_NAMES values into MyDateAdapter.
 -'parse.dateInput' from MY_DATE_FORMATS const, where you specify the format to parse the values as string. This should be the date format used by the locale format specified.
 
-Project created with Angular CLI.
+Project generated with Angular CLI.
 
 npm dependencies installed:
 `npm install --save moment`
