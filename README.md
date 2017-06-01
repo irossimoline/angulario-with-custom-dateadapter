@@ -11,10 +11,11 @@ It has the following key parts:
 -If doesnt support INTL, you must override DEFAULT_MONTH_NAMES and DEFAULT_DAY_OF_WEEK_NAMES values into MyDateAdapter.
 -'parse.dateInput' from MY_DATE_FORMATS const, where you specify the format to parse the values as string. This should be the date format used by the locale format specified.
 
-Project generated with Angular CLI.
+Project generated with Angular CLI. To start project run: `ng serve`
 
 npm dependencies installed:
 `npm install --save moment`
+
 `npm install --save @angular/material`
 
 
