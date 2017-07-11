@@ -135,8 +135,10 @@ export class MyDateAdapter extends DateAdapter<Date> {
             return value;
         else if (typeof value == 'number')
             return isNaN(value) ? null : new Date(Date.parse(value.toString()));
-        else if (typeof value == 'string')
-            return value ? moment(value, parseFormat.toString()).toDate() : moment().toDate();
+        else if (typeof value == 'string') {
+            let date = moment(value, parseFormat.toString());
+            return date.isValid() ? date.toDate() : null;
+        }
         else
             return null;
         
